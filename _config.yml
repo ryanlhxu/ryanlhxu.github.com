@@ -10,11 +10,11 @@ pygments: true
 #
 title : ryanlhxu
 tagline: Site Tagline
-author :
+author : ryanlhxu
   name : ryanlhxu
   email : ryanlhxu@gmail.com
   github : ryanlhxu
-  weibo : economicgay
+  twitter : economicgay
   feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
