@@ -2,8 +2,8 @@
 layout: post
 title: "徽杭古道行"
 description: ""
-category: travel
-tags: [travel]
+category: 旅行
+tags: [旅行]
 ---
 {% include JB/setup %}
 
