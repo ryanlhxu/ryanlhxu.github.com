@@ -1,7 +1,7 @@
 title:            ryanlhxu
 description:      Modeling My Simple Life
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              
+url:              http://ryanlhxu.github.com
 disqus_shortname: 
 
 # Owner/author information
@@ -11,15 +11,15 @@ owner:
   bio:            "Modeling My Simple Life"
   email:          ryanlhxu@email.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:          
+  twitter:        Ryanlhxu  
   facebook:       
   github:         ryanlhxu
-  stackoverflow:  ryanlhxu
+  stackoverflow:  
   linkedin:       
   instagram:      
   lastfm:         
   tumblr: 
-  pinterest: 
+  pinterest: economicgay
   foursquare: 
   steam: 
   dribbble: 
@@ -39,11 +39,7 @@ links:
     url: /about/
   - title: Blog
     url: /posts/
-  - title: Theme Setup
-    url: /theme-setup/
-  - title: Made Mistakes
-    url: http://mademistakes.com
-    external: true
+
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
