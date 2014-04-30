@@ -8,13 +8,13 @@ disqus_shortname:
 owner:
   name:           ryanlhxu
   avatar:         bio-photo.jpg
-  bio:            "Describe your self."
+  bio:            "Modeling My Simple Life"
   email:          ryanlhxu@email.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:      dfj  
+  twitter:          
   facebook:       
-  github:         
-  stackoverflow: 
+  github:         ryanlhxu
+  stackoverflow:  ryanlhxu
   linkedin:       
   instagram:      
   lastfm:         
@@ -37,7 +37,7 @@ bing_verify:
 links:
   - title: About
     url: /about/
-  - title: Posts
+  - title: Blog
     url: /posts/
   - title: Theme Setup
     url: /theme-setup/
