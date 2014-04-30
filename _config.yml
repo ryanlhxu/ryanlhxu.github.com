@@ -25,7 +25,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url : http://ryanlhxu.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -74,6 +74,7 @@ JB :
   tags_path : /tags.html
   atom_path : /atom.xml
   rss_path : /rss.xml
+  about_path : /about.md
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.

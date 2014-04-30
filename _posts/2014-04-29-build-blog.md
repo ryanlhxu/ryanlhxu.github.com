@@ -26,7 +26,7 @@ tags: [GitHub, blog]
 
 ## 搭建Ruby环境
 
-jekyll是用Ruby语言写的一个静态网页生成工具，所以必须先在本地搭建好Ruby环境。在[RubyInstaller](http://rubyinstaller.org/downloads/)下载Ruby的最新版本并且安装，在安装过程中注意**勾选添加环境变量**。同时**必须**下载devkit, 解压到希望的路径下面`(我将其解压到了D盘`)。打开终端，先到devkit的路径下面，然后
+jekyll是用Ruby语言写的一个静态网页生成工具，所以必须先在本地搭建好Ruby环境。在[RubyInstaller](http://rubyinstaller.org/downloads/)下载Ruby的最新版本并且安装，在安装过程中注意**勾选添加环境变量**。同时**必须**下载devkit, 解压到希望的路径下面(我将其解压到了D盘)。打开终端，先到devkit的路径下面，然后
     
     $ ruby dk.rb init
     $ ruby dk.rb install

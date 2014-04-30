@@ -2,5 +2,15 @@
 layout: page
 title: "About"
 description: ""
+group: navigation
 ---
+
 {% include JB/setup %}
+## Modelling My Simple Life
+
+I'm a PhD student in economics. My life and study will be reconded here such that they could be in a memorable shape. I'm really attracted by Jekyll's clear and concise.  
+
+## Keep in touch
+
+* Weibo: [@不理不睬Ryan](http://weibo.com/economicgay)
+* Email: [ryanlhxu@gmail.com](mailto:ryanlhxu@gmail.com)
