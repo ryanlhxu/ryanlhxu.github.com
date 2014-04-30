@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用jekyll在GitHub上搭建个人博客
-description: ""
+description: "一个快速指南"
 modified: 2014-05-1
 tags: [jekyll, GitHuB, blog]
 comments: true

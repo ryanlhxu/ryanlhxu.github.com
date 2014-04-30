@@ -10,7 +10,7 @@ comments: true
 
 #### Modelling My Simple Life
 
-I'm a PhD student in economics. My life and study will be reconded here such that they could be in a memorable shape. I'm really attracted by Jekyll's clear and concise.  
+I'm a PhD student in economics. The process of my life and study would be reconded such that they could form a memorable shape. I'm really attracted by Jekyll's clear and concise.  
 
 
 #### Interests
