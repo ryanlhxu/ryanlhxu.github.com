@@ -51,13 +51,18 @@
         </div>
         <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} by <a href="{{ site.url }}/about" title="About {{ site.owner.name }}">{{ site.owner.name }}</a>.</p>
       </footer>
+    
     </div><!-- /.article-wrap -->
-  {% if site.disqus_shortname and page.comments %}
+    {% if site.disqus_shortname and page.comments %}
     <section id="disqus_thread"></section><!-- /#disqus_thread -->
   {% endif %}
   </article>
 </div><!-- /#main -->
 
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1923755"></script>
+<!-- UY END -->
 <div class="footer-wrap">
   <div class="related-articles">
   <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.url }}/posts/">View all posts</a>)</small></h4>
@@ -72,16 +77,6 @@
     {% include _footer.html %}
   </footer>
 </div><!-- /.footer-wrap -->
-
-
-<!-- UY BEGIN -->
-<div id="uyan_frame"></div>
-<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1923755"></script>
-<!-- UY END -->
-
-
-
-
 
 
 
