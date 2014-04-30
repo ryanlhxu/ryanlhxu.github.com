@@ -1,14 +1,19 @@
 ---
 layout: page
-title: ryanlhxu's blog
-tagline: Supporting tagline
+title: Model My Simple Life
+description: 在第一次看到 Jekyll 之后，就彻底被这种新颖的博客记录和展示方式所吸引，而且还有那句“像黑客一样写博客”。记录工作、学习、生活，也是对新事物的一次有意义的尝试！
+keywords: economics, R, LaTeX, travel, NBA, football  
+author: ryanlhxu
+isIndex: true
+
 ---
 {% include JB/setup %}
 
 ![The Tibet]({{ site.url }}/assets/tibet.jpg)
-  什么时候才能去西藏呢。。。
 
-  放张图激励一下自己。
+什么时候才能去西藏呢。。。
+
+先放张图激励一下自己。
 
 ## My Blog
 <ul class="posts">
@@ -17,6 +22,8 @@ tagline: Supporting tagline
   {% endfor %}
 </ul>
 
-
+## Contact
+* Weibo: [@不理不睬Ryan](http://weibo.com/economicgay)
+* Email: [ryanlhxu@gmail.com](mailto:ryanlhxu@gmail.com)
 
 
