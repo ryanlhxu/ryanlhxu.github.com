@@ -14,14 +14,14 @@ isIndex: true
 
 先放张图激励一下自己。
 
-## My Blog
+### My Blog
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 
-## Contact
+### Contact
 * Weibo: [@不理不睬Ryan](http://weibo.com/economicgay)
 * Email: [ryanlhxu@gmail.com](mailto:ryanlhxu@gmail.com)
 
