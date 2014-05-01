@@ -8,9 +8,6 @@ image:
   creditlink: http://texturelovers.com
 ---
 
-<figure>
-<img src="http://localhost:4000/images/mountain.png" alt="The Mountain">
-<figcaption> This Photo Was Taken at Xuancheng, Anhui, by Ryanlhxu</figcaption>
-</figure>
+
 
 
