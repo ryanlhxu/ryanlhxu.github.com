@@ -55,7 +55,7 @@
         <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} by <a href="{{ site.url }}/about" title="About {{ site.owner.name }}">{{ site.owner.name }}</a>.</p>
       </footer>
     
-     <div>
+     <div align="right">
 <!-- ShareTo Button BEGIN -->
 <a class="shareto_button" href="http://shareto.com.cn/share.html"><img src="http://s.shareto.com.cn/btn/lg-share-cn.gif" width="125" height="21" alt="分享道" style="border:0"/></a>
 <script type="text/javascript" src="http://s.shareto.com.cn/js/shareto_button.js" charset="utf-8"></script>
@@ -69,16 +69,6 @@
     <section id="disqus_thread"></section><!-- /#disqus_thread -->
   {% endif %}
   
-
-
-   <!-- UY BEGIN -->
-<div id="uyan_frame"></div>
-<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1923755"></script>
-<!-- UY END -->
-</div>
-
-
-
   </article>
 </div><!-- /#main -->
 
