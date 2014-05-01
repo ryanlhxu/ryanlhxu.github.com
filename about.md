@@ -6,6 +6,10 @@ tagline: Modeling My Simple Life
 tags: [me]
 modified: 5-1-2014
 comments: true
+image:
+  feature: texture-feature-02.jpg
+  credit: Tough Like Stone
+  creditlink: http://ryanlhxu.github.com
 ---
 
 #### Modelling My Simple Life
