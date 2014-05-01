@@ -30,7 +30,7 @@ comments: true
  5. 修改模板及其他配置
  7. 发布
 
-主要参考的文章是[Jekyll QuickStart](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+主要参考的文章是[Jekyll QuickStart](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)。
 
 ---
 
@@ -51,7 +51,7 @@ jekyll是用Ruby语言写的一个静态网页生成工具，所以必须先在�
 
 可能比较慢，要等待一些时间。如果一次不成功，多试几次。最后会显示安装成功。
 
-## 在GitHub上建立库，克隆jekyll-bootstrap模板至本地
+#### 在GitHub上建立库，克隆jekyll-bootstrap模板至本地
 
 在[GitHub](https://github.com)创建新的库，取名为USERNAME.github.com（这里的usename替换为你自己账号名字的，下同）。打开Git Shell，进入希望放置博客的路径，键入
 
