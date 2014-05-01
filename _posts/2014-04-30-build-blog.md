@@ -3,7 +3,8 @@ layout: post
 title: 使用jekyll在GitHub上搭建个人博客
 description: "一个快速指南"
 modified: 2014-05-1
-tags: [jekyll, GitHuB, blog]
+category: Computer
+tags: [Jekyll, GitHuB, Blog]
 comments: true
 ---
 
@@ -98,7 +99,7 @@ jekyll是用Ruby语言写的一个静态网页生成工具，所以必须先在�
 
 #### 发布
 
-最后是更新发布你的微博，还是打开Git Shell，在博客的路径下，输入
+最后是更新发布你的博客，还是打开Git Shell，在博客的路径下，输入
 
     $ git add .
     $ git commit -m "modified theme"
