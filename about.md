@@ -13,7 +13,7 @@ image:
 
 #### Modelling My Simple Life
 
-I'm a PhD student in economics. The process of my life and study would be recorded such that they could be formed into a memorable shape. I'm really attracted by Jekyll's clear and concise.
+I'm a Ph.D student in economics. The process of my life and study would be recorded such that they could be formed into a memorable shape. I'm really attracted by Jekyll's clear and concise.
 
 
 #### Interests

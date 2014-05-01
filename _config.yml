@@ -1,7 +1,7 @@
 title:            Modeling My Simple Life
 description:      Ryanlhxu's Personal Blog
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://ryanlhxu.github.io
+url:              http://localhost:4000
 disqus_shortname: 
 
 # Owner/author information
