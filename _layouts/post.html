@@ -36,12 +36,7 @@
   </div>
   <article>
     
-    <div>
-<!-- ShareTo Button BEGIN -->
-<a class="shareto_button" href="http://shareto.com.cn/share.html"><img src="http://s.shareto.com.cn/btn/lg-share-cn.gif" width="125" height="21" alt="分享道" style="border:0"/></a>
-<script type="text/javascript" src="http://s.shareto.com.cn/js/shareto_button.js" charset="utf-8"></script>
-<!-- ShareTo Button END -->
-</div>
+
 
     <div class="headline-wrap">
       {% if page.link %}
@@ -60,6 +55,15 @@
         <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} by <a href="{{ site.url }}/about" title="About {{ site.owner.name }}">{{ site.owner.name }}</a>.</p>
       </footer>
     
+     <div>
+<!-- ShareTo Button BEGIN -->
+<a class="shareto_button" href="http://shareto.com.cn/share.html"><img src="http://s.shareto.com.cn/btn/lg-share-cn.gif" width="125" height="21" alt="分享道" style="border:0"/></a>
+<script type="text/javascript" src="http://s.shareto.com.cn/js/shareto_button.js" charset="utf-8"></script>
+<!-- ShareTo Button END -->
+</div>
+
+
+
     </div><!-- /.article-wrap -->
     {% if site.disqus_shortname and page.comments %}
     <section id="disqus_thread"></section><!-- /#disqus_thread -->
