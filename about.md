@@ -5,7 +5,6 @@ title: About Me
 tagline: Modeling My Simple Life
 tags: [me]
 modified: 5-1-2014
-comments: true
 image:
   feature: texture-feature-02.jpg
   credit: Tough Like Stone
@@ -14,7 +13,7 @@ image:
 
 #### Modelling My Simple Life
 
-I'm a PhD student in economics. The process of my life and study would be reconded such that they could form a memorable shape. I'm really attracted by Jekyll's clear and concise.  
+I'm a PhD student in economics. The process of my life and study would be recorded such that they could form a memorable shape. I'm really attracted by Jekyll's clear and concise.  
 
 
 #### Interests
