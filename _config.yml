@@ -1,7 +1,7 @@
 title:            ryanlhxu
 description:      Modeling My Simple Life
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://ryanlhxu.github.com
+url:              http://ryanlhxu.github.io
 disqus_shortname: 
 
 # Owner/author information
@@ -16,7 +16,7 @@ owner:
   github:         ryanlhxu
   stackoverflow:  
   linkedin:       
-  instagram:      
+  instagram:     ryanlhxu 
   lastfm:         
   tumblr: 
   pinterest: economicgay
@@ -24,7 +24,7 @@ owner:
   steam: 
   dribbble: 
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:
+  google_plus: 
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   
