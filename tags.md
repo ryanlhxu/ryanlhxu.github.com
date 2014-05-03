@@ -4,7 +4,6 @@ permalink: /tags/
 title: Tags
 tagline: 
 ---
-
 {% capture tags %}
   {% for tag in site.tags %}
     {{ tag[0] }}
@@ -20,3 +19,6 @@ tagline:
   {% endfor %}
   </ul>
 {% endfor %}
+
+
+

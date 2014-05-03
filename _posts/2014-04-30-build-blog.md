@@ -2,7 +2,7 @@
 layout: post
 title: 使用jekyll在GitHub上搭建个人博客
 description: "一个快速指南"
-modified: 2014-05-1
+modified: 2014-05-3
 category: Computer
 tags: [Jekyll, GitHuB, Blog]
 comments: true
@@ -20,7 +20,9 @@ comments: true
 
 搭建博客的主要目是自娱自乐一下，同时希望保存一些自己学习和生活中的心得体会。如果还能与其他人分享、交流相互的经历，那就更好了。一方面自己对网络技术的了解确实很少，但另一方面又不想直接使用其他商业网站的博客（有太多的广告）。于是打算自己搭建一个相对比较简单与干净的静态网页。
 
-选择Jekyll是因为他让博客安置在GitHub上面，而自己之前已经使用过GitHub，并且积累了初步的Git基础。虽然之前也用过wordpress，但是觉得那个东西还是略显笨重。当然完全免费也是我使用Jekyll的一个重要原因。
+选择Jekyll是因为他让博客安置在GitHub上面，而自己之前已经使用过GitHub，并且积累了初步的Git基础。虽然之前也用过WordPress，但是觉得那个东西还是略显笨重。当然完全免费也是我使用Jekyll的一个重要原因。
+
+在搭建博客之前，我还是建议先了解一下jekyll的基本构架和GitHub使用的基本知识，同时熟练使用一个比较出色的本文编辑器，比如Sublime Text之类的。如果对html语言有较好的掌握，那就更好了，不过这个可以边看边学。
 
 简单来说这次搭建过程主要分成以下几个步骤：
  1. 搭建Ruby环境
