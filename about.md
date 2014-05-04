@@ -6,7 +6,7 @@ tagline: Modeling My Simple Life
 tags: [me]
 modified: 5-1-2014
 image:
-  feature: book.jpg
+  feature: scenary.jpg
   credit: To Be a Thinker
   creditlink: http://ryanlhxu.com
 ---
