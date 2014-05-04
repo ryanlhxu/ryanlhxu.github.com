@@ -6,9 +6,9 @@ tagline: Modeling My Simple Life
 tags: [me]
 modified: 5-1-2014
 image:
-  feature: texture-feature-02.jpg
-  credit: Tough Like Stone
-  creditlink: http://ryanlhxu.github.com
+  feature: book.jpg
+  credit: To Be A Thinker
+  creditlink: http://ryanlhxu.com
 ---
 
 #### Modelling My Simple Life

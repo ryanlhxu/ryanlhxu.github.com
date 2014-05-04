@@ -5,7 +5,7 @@ tags: [Jekyll, theme, responsive, blog, template]
 image:
   feature: scenary.jpg
   credit: To Be A Thinker
-  creditlink: http://ryanlhxu.github.com
+  creditlink: http://ryanlhxu.com
 ---
 
 
