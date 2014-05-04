@@ -7,7 +7,7 @@ tags: [me]
 modified: 5-1-2014
 image:
   feature: book.jpg
-  credit: To Be A Thinker
+  credit: To Be a Thinker
   creditlink: http://ryanlhxu.com
 ---
 

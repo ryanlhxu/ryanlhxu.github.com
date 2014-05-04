@@ -4,7 +4,7 @@ description: "A responsive Jekyll theme with editorial tendencies by designer Mi
 tags: [Jekyll, theme, responsive, blog, template]
 image:
   feature: scenary.jpg
-  credit: To Be A Thinker
+  credit: To Be a Thinker
   creditlink: http://ryanlhxu.com
 ---
 
