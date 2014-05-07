@@ -11,6 +11,7 @@ owner:
   bio:            "A Ph.D Candidate in Economic Science"
   email:          ryanlhxu@email.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  weibo:    economicgay
   twitter:        Ryanlhxu  
   facebook:       
   github:         ryanlhxu
@@ -19,12 +20,12 @@ owner:
   instagram:     ryanlhxu 
   lastfm:         
   tumblr: 
-  pinterest: economicgay
+  pinterest: 
   foursquare: 
   steam: 
   dribbble: 
   # For Google Authorship https://plus.google.com/authorship
-  google_plus: 
+  google_plus:  
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   

@@ -18,7 +18,7 @@ I'm a Ph.D student in economics. The process of my life and study would be recor
 
 #### Interests
 * Economics: Applied Micro Econometrics, Industry Organization, Chinese Economy
-* Computer: R, LaTeX, Matlab, Python
+* Coding: R, LaTeX, Matlab, Python
 * Other: NBA, football, swimming
 
 #### Contact
