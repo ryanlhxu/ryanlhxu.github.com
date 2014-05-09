@@ -99,7 +99,7 @@ jekyll是用Ruby语言写的一个静态网页生成工具，所以必须先在�
 
 这样就改变了模板，更多模板请查看[http://themes.jekyllbootstrap.com/](http://themes.jekyllbootstrap.com/)。
 
-浏览博客的时候会发现他采用了一个默认的社交评论工具"disqus", 这东西简直不能忍。所以打开_config.yml，找到comments这部分，将provider中的"disqus"改成"false"，这样就可以取消评论。但我参考了[Jekyll设置友言为社会化评论组件](http://joeyio.com/jekyll/2013/04/13/how-to-use-uyan-in-Jekyll/), 这样可以登录新浪微博等社交平台进行评论，效果不错。
+浏览博客的时候会发现他采用了一个默认的社交评论工具"disqus", 由于这基本上市国外的东西，还是很难忍受的。所以打开_config.yml，找到comments这部分，将provider中的"disqus"改成"false"，这样就可以取消评论。但我参考了[Jekyll设置友言为社会化评论组件](http://joeyio.com/jekyll/2013/04/13/how-to-use-uyan-in-Jekyll/), 这样可以登录新浪微博等社交平台进行评论，效果不错。其实如果设置多说的话也差不多。
 
 #### 发布
 
