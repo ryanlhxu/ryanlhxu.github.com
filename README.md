@@ -1,3 +1,3 @@
-# This is ryanlhxu's personal blog
+# This is Ryanlhxu's Personal Blog
 
-Files in _posts are my own.
+I use the Minimal Mistakes theme but modify it a bit. Files in _posts and images are my own. 
