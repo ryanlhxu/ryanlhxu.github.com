@@ -6,7 +6,7 @@ tagline:
 ---
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="{{ site.url }}/assets/js/scripts.min.js"></script>
+
 
 
  <div class="tag-cloud">
