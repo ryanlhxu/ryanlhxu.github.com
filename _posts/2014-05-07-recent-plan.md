@@ -4,7 +4,7 @@ title: 生活在于不息的折腾
 description: "近期回顾与计划"
 modified: 2014-05-08
 category: Life
-tags: [Blog,iconmoon,coursera]
+tags: [Blog,Iconmoon,Coursera]
 comments: true
 ---
 >发现用jekyll对我来说还是很方便的，可以随时改动之前写过的东西，等需要的时候一起push。

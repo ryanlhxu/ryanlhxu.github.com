@@ -4,7 +4,7 @@ title: 周杰伦演唱会
 description: "时代痕迹与青春记忆"
 modified: 2014-05-03
 category: Life
-tags: [Concert, Photograph]
+tags: [Concert, Photography]
 comments: true
 ---
 
