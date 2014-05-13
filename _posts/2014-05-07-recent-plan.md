@@ -16,7 +16,7 @@ comments: true
 这几天还是忙里偷闲，花了一点时间在网页上面。首先借助JavaScript为自己的网页设置了一个返回顶部的按钮（当然这不是我写的），具体可以参考[这篇文章](http://liberize.me/post/jekyll-add-back-to-top-button.html)。
 然后我写了一篇所谓的论文笔记进一步练习了Markdown，因为我之前听说可以用Pandoc将Markdown自动转成LaTeX文件。来一发
 
-	$ pandoc -o latex filename.md
+	$ pandoc filename.md -o filename.tex
 
 后发现，里面的表格死活转换不过去，白白浪费了我很多的时间。
 
