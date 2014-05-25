@@ -82,3 +82,11 @@ $$p_{-1}=p_{1}=0; z_{-1}=-\frac{1}{2},z_{1}=\frac{1}{2},q=\alpha$$， 因此，�
 <br/>
 
 而在媒体竞争的情况下，每家媒体只能占据到很小的一块地方。这时候感情效应大大减弱了，同时信息效应变得更强了。媒体愿意选择更加具有偏向性的推荐。由于信息的充分性，选民可以最优的进行投票。政党也愿意选择极化的策略。
+
+
+
+
+$$\begin{thebibliography}{9}
+\bibitem{} Gul and Pesendorfer, 2012, Princeton University.
+\end{thebibliography}
+\end{document}$$

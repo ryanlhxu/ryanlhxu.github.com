@@ -22,7 +22,7 @@ comments: true
 
 假设我们写了如下的一段较长的代码，
 
-{% highlight fortran %}
+{% highlight fortran  %}
 ! fullcode
 program demo
     print *, "In main program"
