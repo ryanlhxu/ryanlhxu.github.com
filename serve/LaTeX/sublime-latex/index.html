@@ -1,0 +1,310 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>用Sublime Text编写LaTeX &#8211; Modelling My Simple Life</title>
+<meta name="description" content="补全代码与表格制作">
+<meta name="keywords" content="LaTeX, Sublime">
+<!-- Twitter Cards -->
+	
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:image" content=
+			
+				
+						"http://localhost:4000/images/"
+				
+			
+		>
+	
+	<meta name="twitter:title" content="用Sublime Text编写LaTeX">
+	<meta name="twitter:description" content="补全代码与表格制作">
+	<meta name="twitter:creator" content="@Ryanlhxu">
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用Sublime Text编写LaTeX">
+<meta property="og:description" content="补全代码与表格制作">
+<meta property="og:url" content="http://localhost:4000/LaTeX/sublime-latex/">
+<meta property="og:site_name" content="Modelling My Simple Life">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/LaTeX/sublime-latex/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Modelling My Simple Life Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Webfonts -->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.min.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div  class="navigation-wrapper">
+	<div class="site-name">
+		<a style="font-size:85%" href="http://localhost:4000">Modelling My Simple Life</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+				<li><a style="font-size:85%" href="http://localhost:4000/about/" >About</a></li>
+		        
+				<li><a style="font-size:85%" href="http://localhost:4000/posts/" >Blog</a></li>
+		        
+				<li><a style="font-size:85%" href="http://localhost:4000/categories/" >category</a></li>
+		        
+				<li><a style="font-size:85%" href="http://localhost:4000/tags/" >Tag</a></li>
+		        
+	          </ul>
+	</nav>
+    
+
+
+
+
+	</div><!-- /.top-navigation -->
+             
+
+		
+
+    
+
+
+
+
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+	<img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="ryanlhxu bio photo"></a>
+
+<h3>ryanlhxu</h3>
+<p>A Ph.D Candidate in Economic Science</p>
+<a href="http://weibo.com/economicgay" class="author-social" target="_blank"><i class="icon-weibo"></i> Weibo </a>
+<a href="http://twitter.com/Ryanlhxu" class="author-social" target="_blank"><i class="icon-twitter"></i> Twitter</a>
+
+
+
+<a href="http://instagram.com/ryanlhxu" class="author-social" target="_blank"><i class="icon-instagram"></i> Instagram</a>
+
+<a href="http://github.com/ryanlhxu" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+
+
+
+
+
+  </div>
+  <article>
+    
+
+
+    <div class="headline-wrap">
+      
+        <h1><a href="http://localhost:4000/LaTeX/sublime-latex/" rel="bookmark" title="用Sublime Text编写LaTeX">用Sublime Text编写LaTeX</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<p>使用Sublime Text搭建LaTeX环境的权衡在于你不能像Texmaker或者WinEdt运用菜单栏或者公式栏插入你想要的环境或者符号了，但是可以自由的编写代码片段并自动补全。因此对LaTeX的基本命令已经比较熟悉的可以尝试使用Sublime Text。</p>
+
+<p><br /></p>
+
+<p>先用Sublime Text 2搭建LaTeX环境，MikTeX或者TeXlive都是可以的。先要下载LaTeXTools，具体步骤可参考<a href="http://elegantlatex.org/2014/04/21/sublime-text-latex/">这篇文章</a>的后半部分。</p>
+
+<p><br /></p>
+
+<p>LaTeXTools已经帮你写好了不少代码片段。例如输入bfigure，再按Tab键就补全了插入图片的代码片段; 输入bit，再按Tab键就补全了罗列环境的代码片段……</p>
+
+<p><br /></p>
+
+<p>要看具体有哪些代码片段，点击Preference -&gt; Browse Packages, 找到LaTeXTools这个文件夹，按类型排序，找到所有后缀是sublime-snippet的文件看看就知道了。如果想添加一个常用的代码片段，例如最优化的片段，</p>
+
+<p>$$\begin{equation}  
+ \begin{array}{cll}
+ &amp; \underset{x}{\text{max}}  &amp; f(x) \\
+ &amp; \text{subject to}  &amp; x&gt;0
+ \end{array}
+\end{equation}
+$$</p>
+
+<p><br /></p>
+
+<p>首先新建一个sublime-snippet文件，输入</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;snippet&gt;</span>
+	<span class="nt">&lt;content&gt;</span><span class="cp">&lt;![CDATA[</span>
+<span class="cp">\begin{equation*}</span>
+<span class="cp"> \begin{aligned}</span>
+<span class="cp"> &amp; \underset{${1:x}}{\text{${2:max}}}</span>
+<span class="cp"> &amp; &amp; ${3:f_0(x)} \\\\</span>
+<span class="cp"> &amp; \text{subject to}</span>
+<span class="cp"> &amp; &amp; ${4:f_i(x) \leq b_i, \; i = 1, \ldots, m.}</span>
+<span class="cp"> \end{aligned}</span>
+<span class="cp">\end{equation*}</span>
+<span class="cp">]]&gt;</span><span class="nt">&lt;/content&gt;</span>
+	<span class="nt">&lt;tabTrigger&gt;</span>bopt<span class="nt">&lt;/tabTrigger&gt;</span>
+	<span class="nt">&lt;scope&gt;</span>text.tex.latex<span class="nt">&lt;/scope&gt;</span>
+<span class="nt">&lt;/snippet&gt;</span>
+</code></pre>
+</div>
+
+<p>在这里${1:x}数字1代表第一次需要被替换变量，以此类推；x表示示例变量。</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;tabTrigger&gt;</span>bopt<span class="nt">&lt;/tabTrigger&gt;</span>
+</code></pre>
+</div>
+
+<p>代表输入bopt点击Tab键就可以自动补全最优化的代码。
+最后把此文件保存在LaTeXTools文件夹内即可。</p>
+
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+	<img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="ryanlhxu bio photo"></a>
+
+<h3>ryanlhxu</h3>
+<p>A Ph.D Candidate in Economic Science</p>
+<a href="http://weibo.com/economicgay" class="author-social" target="_blank"><i class="icon-weibo"></i> Weibo </a>
+<a href="http://twitter.com/Ryanlhxu" class="author-social" target="_blank"><i class="icon-twitter"></i> Twitter</a>
+
+
+
+<a href="http://instagram.com/ryanlhxu" class="author-social" target="_blank"><i class="icon-instagram"></i> Instagram</a>
+
+<a href="http://github.com/ryanlhxu" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+
+
+
+
+
+        </div>
+        <p class="byline"><strong>用Sublime Text编写LaTeX</strong> was published on <time datetime="2014-05-25T00:00:00+08:00">May 25, 2014</time> by <a href="http://localhost:4000/about" title="About ryanlhxu">ryanlhxu</a>.</p>
+      </footer>
+    
+     <div align="right">
+</div>
+
+
+
+
+    </div><!-- /.article-wrap -->
+    
+  
+  
+   <!-- Duoshuo Comment BEGIN -->
+  <div  class="ds-thread"></div>
+  <script style="font-family: PT Serif,微软雅黑,serif;" type="text/javascript">
+  var duoshuoQuery = {short_name:"ryanlhxu"};//require,replace your short_name
+  (function() {
+          var ds = document.createElement('script');
+          ds.type = 'text/javascript';ds.async = true;
+          ds.src = 'http://static.duoshuo.com/embed.js';
+          ds.charset = 'UTF-8';
+          (document.getElementsByTagName('head')[0] 
+          || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+  <!-- Duoshuo Comment END -->
+
+
+  </article>
+</div><!-- /#main -->
+
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/posts/">View all blogs</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://localhost:4000/Computer/r-map/" title="用R语言绘制地图并上色">用R语言绘制地图并上色</a></li>
+    
+      <li><a href="http://localhost:4000/Economics/media-policy/" title="媒体与政治">媒体与政治</a></li>
+    
+      <li><a href="http://localhost:4000/Study/fortran-notes1/" title="Fortran学习笔记1">Fortran学习笔记1</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  
+
+  <footer>
+    <span>&copy; 2014 ryanlhxu. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+
+ </footer>
+</div><!-- /.footer-wrap -->
+
+
+<div id="back-top">
+  <a href="#top" title="回到顶部"></a>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+  
+
+
+	        
+
+</body>
+
+
+
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1399204677779796&move=0&amp;btn=r2.gif" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+</html>

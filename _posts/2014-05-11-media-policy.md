@@ -86,7 +86,3 @@ $$p_{-1}=p_{1}=0; z_{-1}=-\frac{1}{2},z_{1}=\frac{1}{2},q=\alpha$$， 因此，�
 
 
 
-$$\begin{thebibliography}{9}
-\bibitem{} Gul and Pesendorfer, 2012, Princeton University.
-\end{thebibliography}
-\end{document}$$
