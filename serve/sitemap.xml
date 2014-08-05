@@ -40,6 +40,10 @@
 
     
     <url>
+        <loc>http://localhost:4000/web-crawler/</loc>
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/LaTeX/sublime-latex/</loc>
     </url>
     
