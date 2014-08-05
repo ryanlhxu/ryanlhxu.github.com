@@ -2,8 +2,8 @@
 layout: post
 title: 媒体与政治
 description: "基于博弈的框架"
-category: Economics
-tags: [Policy,Economics, Media, Game Theory]
+category: Academy
+tags: [Politics, Economics]
 comments: true
 ---
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
