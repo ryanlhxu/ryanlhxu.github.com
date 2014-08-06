@@ -8,11 +8,11 @@ comments: true
 ---
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-使用Sublime Text搭建LaTeX环境的权衡在于你不能像Texmaker或者WinEdt运用菜单栏或者公式栏插入你想要的环境或者符号了，但是可以自由的编写代码片段并自动补全。因此对LaTeX的基本命令已经比较熟悉的可以尝试使用Sublime Text。
+使用Sublime Text搭建LaTeX环境的权衡在于你不能像Texmaker或者WinEdt运用菜单栏或者公式栏插入你想要的环境或者符号了，但是可以更加自由的制作代码片段并更加快速的自动补全。因此对LaTeX的基本命令已经比较熟悉的可以尝试使用Sublime Text。
 
 <br/>
 
-先用Sublime Text 2搭建LaTeX环境，MikTeX或者TeXlive都是可以的。先要下载LaTeXTools，具体步骤可参考[这篇文章](http://elegantlatex.org/2014/04/21/sublime-text-latex/)的后半部分。
+先用Sublime Text 2搭建LaTeX环境，MikTeX或者TeXlive都是可以的。先要通过Sublime Text的宏包管理下载LaTeXTools，然后搭建LaTeX都编写环境。具体步骤可参考[这篇文章](http://elegantlatex.org/2014/04/21/sublime-text-latex/)的后半部分。
 
 <br/>
 
@@ -52,14 +52,20 @@ $$</p>
 </snippet>
 {% endhighlight %}
 
+这里需要解释一下的是，如${1:x}, 数字1代表光标第一次停留的地方，即是第一处会被替换的地方；x是将会被替代的内容。按Tab键会依次推进。
 
-在这里${1:x}数字1代表第一次需要被替换变量，以此类推；x表示示例变量。
+<br/>
+
+而
 
 {% highlight html %}
 <tabTrigger>bopt</tabTrigger>
 {% endhighlight %}
   
 
-代表输入bopt点击Tab键就可以自动补全最优化的代码。
-最后把此文件保存在LaTeXTools文件夹内即可。
+则代表输入bopt点击Tab键就可以自动补全最优化的代码。
+
+<br/>
+
+此代码片段文件编写完毕后，命名并且保存在LaTeXTools文件夹内。今后在编写LaTeX时需要用到最优化格式，只需要输入bopt后按Tab键即可补全完整代码。
 
