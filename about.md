@@ -6,14 +6,10 @@ tagline: Modeling My Simple Life
 tags: [me]
 modified: 5-1-2014
 image:
-  feature: http://vdisk-thumb-3.wcdn.cn/frame.1024x768/download.weipan.cn/3441725/8ba4b09ab557d597dd57f732f958c6fdcee4478c?ssig=C4Us9RZEKH&Expires=1407261600&KID=sae,l30zoo1wmz
-  credit: To Be a Thinker
-  creditlink: http://ryanlhxu.com
+  feature: http://photos.tuchong.com/437717/f/7282638.jpg
 ---
 
-#### Modelling My Simple Life
-
-I'm a Ph.D student in economics. The process of my life and study would be recorded such that they could be formed into a memorable shape. I'm really attracted by Jekyll's clear and concise.
+I'm a Ph.D candidate in economics. The process of my life and study would be recorded such that they could be formed into a memorable shape. I'm really attracted by Jekyll's clear and concise.
 
 
 #### Interests
