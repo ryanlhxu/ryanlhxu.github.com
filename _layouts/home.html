@@ -7,24 +7,16 @@
 {% include _head.html %}
 </head>
 
-
 <body class="home">
-
-
-
-
 
 {% include _browser-upgrade.html %}
 
 {% include _navigation.html %}
 
-
 {% if page.image.feature %}
   <div class="image-wrap">
   <img src=
-    {% if page.image.feature contains 'http://' %}
-      "{{ page.image.feature }}"
-    {% elsif page.image.feature contains 'https://' %}
+    {% if page.image.feature contains 'http' %}
       "{{ page.image.feature }}"
     {% else %}
       "{{ site.url }}/images/{{ page.image.feature }}"
@@ -40,22 +32,19 @@
   {% include _author-bio.html %}
 </div>
 
-
 <div id="index">
-  <h3><a href="{{ site.url}}/posts/">Recent Blogs</a></h3>
-  {% for post in site.posts limit:5 %}    
+  <h3><a href="{{ site.url}}/posts/">Recent Posts</a></h3>
+  {% for post in site.posts limit:5 %}
   <article>
     {% if post.link %}
-      <h3 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="icon-link"></i></h3>
+      <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="icon-weibo"></i></h2>
     {% else %}
       <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
       <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
     {% endif %}
   </article>
   {% endfor %}
-
 </div><!-- /#index -->
-
 
 <div class="footer-wrap">
   <footer>
@@ -66,6 +55,6 @@
   <a href="#top" title="回到顶部"></a>
 </div>
 {% include _scripts.html %}
-
+  
 </body>
 </html>
