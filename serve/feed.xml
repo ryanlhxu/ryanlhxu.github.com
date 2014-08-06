@@ -1,44 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text">Modelling My Simple Life</title>
+<title type="text">Ryanlhxu</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
-<link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2014-08-05T13:48:47+08:00</updated>
-<id>http://localhost:4000/</id>
+<link rel="self" type="application/atom+xml" href="http://ryanlhxu.com/feed.xml" />
+<link rel="alternate" type="text/html" href="http://ryanlhxu.com" />
+<updated>2014-08-06T16:38:09+08:00</updated>
+<id>http://ryanlhxu.com/</id>
 <author>
   <name>ryanlhxu</name>
-  <uri>http://localhost:4000/</uri>
+  <uri>http://ryanlhxu.com/</uri>
   <email>ryanlhxu@email.com</email>
 </author>
 
 
 <entry>
-  <title type="html"><![CDATA[Web Crawler]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/web-crawler/" />
-  <id>http://localhost:4000/web-crawler</id>
+  <title type="html"><![CDATA[抓取华尔街见闻每日新闻]]></title>
+  <link rel="alternate" type="text/html" href="http://ryanlhxu.com/Academy/web-crawler/" />
+  <id>http://ryanlhxu.com/Academy/web-crawler</id>
   <published>2014-08-04T00:00:00+08:00</published>
   <updated>2014-08-04T00:00:00+08:00</updated>
   <author>
     <name>ryanlhxu</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://ryanlhxu.com</uri>
     <email>ryanlhxu@email.com</email>
   </author>
   <content type="html">
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# coding=UTF-8&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;re&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;max_page&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;date_local&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strftime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;%Y年%m月&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%d&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;日&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;localtime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()))&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_page&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# acquire the date&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;page_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;r&amp;#39;http://wallstreetcn.com/china?&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;page=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%d&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;    
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;page_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;r&amp;#39;http://wallstreetcn.com/china&amp;#39;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;con&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;p_date&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;r&amp;#39;&amp;lt;span class=&amp;quot;meta-item&amp;quot;&amp;gt;\s+\d+年\d+月\d+日&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;m_date&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p_date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;finditer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;con&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:])&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date_local&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;#acquire the url and title&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;p_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;r&amp;#39;&amp;lt;h2&amp;gt;&amp;lt;a href=&amp;quot;/node/\d+&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;.+&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;m_url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p_url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;finditer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;con&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;r&amp;#39;http://wallstreetcn.com&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;43&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;#acquire the abstract&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;p_abstract&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;r&amp;#39;media-content&amp;quot;&amp;gt;\s+&amp;lt;p&amp;gt;.+&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;m_abstract&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p_abstract&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;finditer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;con&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_abstract&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;abstract&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;华尔街见闻 - &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date_local&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date_i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; 
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date_i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date_local&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%s&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%s&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%s&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;标题&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;摘要&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;abstract&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;地址&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/web-crawler/&quot;&gt;Web Crawler&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://localhost:4000&quot;&gt;Modelling My Simple Life&lt;/a&gt; on August 04, 2014.&lt;/p&gt;</content>
+
+  &lt;p&gt;&lt;a href=&quot;http://ryanlhxu.com/Academy/web-crawler/&quot;&gt;抓取华尔街见闻每日新闻&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://ryanlhxu.com&quot;&gt;Ryanlhxu&lt;/a&gt; on August 04, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[用Sublime Text编写LaTeX]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/LaTeX/sublime-latex/" />
-  <id>http://localhost:4000/LaTeX/sublime-latex</id>
+  <link rel="alternate" type="text/html" href="http://ryanlhxu.com/Academy/sublime-latex/" />
+  <id>http://ryanlhxu.com/Academy/sublime-latex</id>
   <published>2014-05-25T00:00:00+08:00</published>
   <updated>2014-05-25T00:00:00+08:00</updated>
   <author>
     <name>ryanlhxu</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://ryanlhxu.com</uri>
     <email>ryanlhxu@email.com</email>
   </author>
   <content type="html">&lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;&lt;/script&gt;
@@ -96,20 +144,20 @@ $$&lt;/p&gt;
 最后把此文件保存在LaTeXTools文件夹内即可。&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/LaTeX/sublime-latex/&quot;&gt;用Sublime Text编写LaTeX&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://localhost:4000&quot;&gt;Modelling My Simple Life&lt;/a&gt; on May 25, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://ryanlhxu.com/Academy/sublime-latex/&quot;&gt;用Sublime Text编写LaTeX&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://ryanlhxu.com&quot;&gt;Ryanlhxu&lt;/a&gt; on May 25, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[用R语言绘制地图并上色]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/Computer/r-map/" />
-  <id>http://localhost:4000/Computer/r-map</id>
+  <link rel="alternate" type="text/html" href="http://ryanlhxu.com/Academy/r-map/" />
+  <id>http://ryanlhxu.com/Academy/r-map</id>
   <updated>2014-05-13T00:00:00-00:00</updated>
   <published>2014-05-12T00:00:00+08:00</published>
   
   <author>
     <name>ryanlhxu</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://ryanlhxu.com</uri>
     <email>ryanlhxu@email.com</email>
   </author>
   <content type="html">&lt;p&gt;GIS好像是一个经常听到的名词，但是我还没有仔细研究过它的具体定义。前不久用R画了一张中国地级市的地图，主要是将2005年全国各地级市高新技术产业产值占该地工业总产值的比重可视化了一下。其实这个数据没有什么特别的意思，就是为了学习一下画地图而随便找的。&lt;/p&gt;
@@ -229,19 +277,19 @@ title&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&
 &lt;p&gt;这样就画好了。画面太美不敢看。&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Computer/r-map/&quot;&gt;用R语言绘制地图并上色&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://localhost:4000&quot;&gt;Modelling My Simple Life&lt;/a&gt; on May 12, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://ryanlhxu.com/Academy/r-map/&quot;&gt;用R语言绘制地图并上色&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://ryanlhxu.com&quot;&gt;Ryanlhxu&lt;/a&gt; on May 12, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[媒体与政治]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/Economics/media-policy/" />
-  <id>http://localhost:4000/Economics/media-policy</id>
+  <link rel="alternate" type="text/html" href="http://ryanlhxu.com/Academy/media-policy/" />
+  <id>http://ryanlhxu.com/Academy/media-policy</id>
   <published>2014-05-11T00:00:00+08:00</published>
   <updated>2014-05-11T00:00:00+08:00</updated>
   <author>
     <name>ryanlhxu</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://ryanlhxu.com</uri>
     <email>ryanlhxu@email.com</email>
   </author>
   <content type="html">&lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;&lt;/script&gt;
@@ -327,175 +375,20 @@ title&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&
 &lt;p&gt;而在媒体竞争的情况下，每家媒体只能占据到很小的一块地方。这时候感情效应大大减弱了，同时信息效应变得更强了。媒体愿意选择更加具有偏向性的推荐。由于信息的充分性，选民可以最优的进行投票。政党也愿意选择极化的策略。&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Economics/media-policy/&quot;&gt;媒体与政治&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://localhost:4000&quot;&gt;Modelling My Simple Life&lt;/a&gt; on May 11, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Fortran学习笔记1]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/Study/fortran-notes1/" />
-  <id>http://localhost:4000/Study/fortran-notes1</id>
-  <updated>2014-05-12T00:00:00-00:00</updated>
-  <published>2014-05-10T00:00:00+08:00</published>
-  
-  <author>
-    <name>ryanlhxu</name>
-    <uri>http://localhost:4000</uri>
-    <email>ryanlhxu@email.com</email>
-  </author>
-  <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
-  &lt;header&gt;
-    &lt;h3&gt;Contents&lt;/h3&gt;
-  &lt;/header&gt;
-&lt;div id=&quot;drawer&quot;&gt;
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#section&quot;&gt;处理多个文件&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#makefile&quot;&gt;写Makefile&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-  &lt;/div&gt;
-&lt;/section&gt;
-&lt;!-- /#table-of-contents --&gt;
-&lt;p&gt;写Makefile可以大大简化同时编译多个文件的过程，可以更加快捷的更新被修改程序的编译结果，并且更新最终的执行程序。&lt;/p&gt;
-
-&lt;h3 id=&quot;section&quot;&gt;处理多个文件&lt;/h3&gt;
-
-&lt;p&gt;假设我们写了如下的一段较长的代码，&lt;/p&gt;
-
-&lt;p&gt;Liquid error: Flag value is invalid: -O “”&lt;/p&gt;
-
-&lt;p&gt;要产生执行程序，可以直接在终端输入，&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ gfortran fullcode.f90 -o fullcode.exe
-$ fullcode
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;就能得到运行结果。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;我们经常将较长的代码拆分开来。例如上段代码的可以拆分成主程序和两个子程序,&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;fortran&quot;&gt;&lt;span class=&quot;c&quot;&gt;! main.f90&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;program &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;demo&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;In main program&amp;quot;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;call &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;sub1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;call &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;sub2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end program&lt;/span&gt;  
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;fortran&quot;&gt;&lt;span class=&quot;c&quot;&gt;! sub1.f90&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;sub1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;In sub1&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;sub1&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;fortran&quot;&gt;&lt;span class=&quot;c&quot;&gt;! sub2.f90&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;sub2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;In sub2&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;sub2&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;共同编译这三段代码，我们可以得到执行程序。运行执行程序得到最终的结果。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ gfortran main.f90 sub1.f90 sub2.f90 -o main.exe
-$ main.exe
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;我们也可以分开编译这三段程序，先产生目标文件，输入&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ gfortran -c main.f90 sub1.f90 sub2.f90 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;在文件夹内产生.o目标文件。然后连接三个目标文件得到执行程序，我们还可以将运行结果写入output.txt里面。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ gfortran main.o sub1.o sub2.o -o main.exe
-$ main.exe &amp;gt; output.txt
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;我们经常需要修改某个子程序, 但是我们不希望花时间重新编译那些没有被修改的程序。因此，如果我们只修改了sub2.f90, 我们只需要重新编译sub2.f90就可以了。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ gfortran -c sub2.f90
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;同样的，连接三个目标文件产生执行程序。&lt;/p&gt;
-
-&lt;h3 id=&quot;makefile&quot;&gt;写Makefile&lt;/h3&gt;
-
-&lt;p&gt;写Makefile可以大大简化以上过程，可以更加快捷的更新修改后的程序的编译结果，并且更新最终的执行程序。在尝试写Makefile之前，我们首先要确认已经安装了make执行程序。可以先安装mingw，并将bin路径添加到系统路径里面。为了后面的尝试，我们先把之前生成的.o以及.exe文件删除。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ rm -f *.o *.exe
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Makefile的写法如下，按最后被执行的顺利从上往下写。即后被执行的命令写在上面，而先被执行的写在下面，例如&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;makefile&quot;&gt;&lt;span class=&quot;c&quot;&gt;# Makefile&lt;/span&gt;
-&lt;span class=&quot;nf&quot;&gt;output.txt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;main.exe&lt;/span&gt;
-    ./main.exe&amp;gt;output.txt
-
-&lt;span class=&quot;nf&quot;&gt;main.exe&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;main.o sub1.o sub2.o &lt;/span&gt;
-    gfortran main.f90 sub1.o sub2.o -o main.exe
-
-&lt;span class=&quot;nf&quot;&gt;main.o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;main.f90&lt;/span&gt;
-    gfortran -c main.f90
-
-&lt;span class=&quot;nf&quot;&gt;sub1.o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;sub1.f90&lt;/span&gt;
-    gfortran -c sub1.f90
-
-&lt;span class=&quot;nf&quot;&gt;sub2.o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;sub2.f90&lt;/span&gt;
-    gfortran -c sub2.f90
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;可以看到，每次执行的命令都有两行组成。上面一行的冒号左边代表生成的目标，冒号右边代表生成目标所依赖的文件。而下面一行描述了产生目标的过程。例如，第一行表示产生output.txt需要先有main.exe；第二行表示的是由main.exe产生output.txt的命令。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;最后，在输入&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ make output.txt
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;之后，文件夹内的output.txt内保存了最终的执行结果。因为之前我们没有编译过任何一个程序，所以这个make命令完整的执行了Makefile里面所有命令，并且生成了所有目标文件的。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;我们可以简化Makefile的形式，例如可以将其中的编译过程合写为一个统一的形式，即&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;makefile&quot;&gt;&lt;span class=&quot;c&quot;&gt;# Makefile&lt;/span&gt;
-&lt;span class=&quot;nf&quot;&gt;output.txt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;main.exe&lt;/span&gt;
-    ./main.exe&amp;gt;output.txt
-
-&lt;span class=&quot;nf&quot;&gt;main.exe&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;main.o sub1.o sub2.o &lt;/span&gt;
-    gfortran main.f90 sub1.o sub2.o -o main.exe
-
-&lt;span class=&quot;nf&quot;&gt;%.o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;%.f90&lt;/span&gt;
-    gfortran -c &lt;span class=&quot;nv&quot;&gt;$&amp;lt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;我们也可以通过运用申明宏观变量并且引用他们的方式来进一步简化Makefile以及避免不必要的错误。&lt;/p&gt;
-
-
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Study/fortran-notes1/&quot;&gt;Fortran学习笔记1&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://localhost:4000&quot;&gt;Modelling My Simple Life&lt;/a&gt; on May 10, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://ryanlhxu.com/Academy/media-policy/&quot;&gt;媒体与政治&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://ryanlhxu.com&quot;&gt;Ryanlhxu&lt;/a&gt; on May 11, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[生活在于不息的折腾]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/Life/recent-plan/" />
-  <id>http://localhost:4000/Life/recent-plan</id>
+  <link rel="alternate" type="text/html" href="http://ryanlhxu.com/Life/recent-plan/" />
+  <id>http://ryanlhxu.com/Life/recent-plan</id>
   <updated>2014-05-08T00:00:00-00:00</updated>
   <published>2014-05-07T00:00:00+08:00</published>
   
   <author>
     <name>ryanlhxu</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://ryanlhxu.com</uri>
     <email>ryanlhxu@email.com</email>
   </author>
   <content type="html">&lt;blockquote&gt;
@@ -532,20 +425,20 @@ $ main.exe &amp;gt; output.txt
 &lt;p&gt;最后的计划就是学习上的事情了，毕竟不务正业了这么久，该好好补补了。&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Life/recent-plan/&quot;&gt;生活在于不息的折腾&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://localhost:4000&quot;&gt;Modelling My Simple Life&lt;/a&gt; on May 07, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://ryanlhxu.com/Life/recent-plan/&quot;&gt;生活在于不息的折腾&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://ryanlhxu.com&quot;&gt;Ryanlhxu&lt;/a&gt; on May 07, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[周杰伦演唱会]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/Life/vocal-concert/" />
-  <id>http://localhost:4000/Life/vocal-concert</id>
+  <link rel="alternate" type="text/html" href="http://ryanlhxu.com/Life/vocal-concert/" />
+  <id>http://ryanlhxu.com/Life/vocal-concert</id>
   <updated>2014-05-03T00:00:00-00:00</updated>
   <published>2014-05-03T00:00:00+08:00</published>
   
   <author>
     <name>ryanlhxu</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://ryanlhxu.com</uri>
     <email>ryanlhxu@email.com</email>
   </author>
   <content type="html">&lt;figure&gt;
@@ -561,20 +454,20 @@ $ main.exe &amp;gt; output.txt
 &lt;/figure&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Life/vocal-concert/&quot;&gt;周杰伦演唱会&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://localhost:4000&quot;&gt;Modelling My Simple Life&lt;/a&gt; on May 03, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://ryanlhxu.com/Life/vocal-concert/&quot;&gt;周杰伦演唱会&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://ryanlhxu.com&quot;&gt;Ryanlhxu&lt;/a&gt; on May 03, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[使用Jekyll在GitHub上搭建个人博客]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/Computer/build-blog/" />
-  <id>http://localhost:4000/Computer/build-blog</id>
+  <link rel="alternate" type="text/html" href="http://ryanlhxu.com/Life/build-blog/" />
+  <id>http://ryanlhxu.com/Life/build-blog</id>
   <updated>2014-05-03T00:00:00-00:00</updated>
   <published>2014-04-30T00:00:00+08:00</published>
   
   <author>
     <name>ryanlhxu</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://ryanlhxu.com</uri>
     <email>ryanlhxu@email.com</email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
@@ -702,20 +595,20 @@ $ git push
 &lt;p&gt;其实我也是刚开始玩，准备先clone几个别人博客，仔细研究一下。等差不多配置满意了就可以专心写文章了。不过这要等到期中之后了。最近太忙了，好多问题要过段时间再来补充。先写个大概。&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Computer/build-blog/&quot;&gt;使用Jekyll在GitHub上搭建个人博客&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://localhost:4000&quot;&gt;Modelling My Simple Life&lt;/a&gt; on April 30, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://ryanlhxu.com/Life/build-blog/&quot;&gt;使用Jekyll在GitHub上搭建个人博客&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://ryanlhxu.com&quot;&gt;Ryanlhxu&lt;/a&gt; on April 30, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[徽杭古道行]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/Life/hui-hang/" />
-  <id>http://localhost:4000/Life/hui-hang</id>
+  <link rel="alternate" type="text/html" href="http://ryanlhxu.com/Life/hui-hang/" />
+  <id>http://ryanlhxu.com/Life/hui-hang</id>
   <updated>2014-05-01T00:00:00-00:00</updated>
   <published>2014-04-29T00:00:00+08:00</published>
   
   <author>
     <name>ryanlhxu</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://ryanlhxu.com</uri>
     <email>ryanlhxu@email.com</email>
   </author>
   <content type="html">&lt;p&gt;==================================&lt;/p&gt;
@@ -732,7 +625,7 @@ $ git push
 &lt;/figure&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Life/hui-hang/&quot;&gt;徽杭古道行&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://localhost:4000&quot;&gt;Modelling My Simple Life&lt;/a&gt; on April 29, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://ryanlhxu.com/Life/hui-hang/&quot;&gt;徽杭古道行&lt;/a&gt; was originally published by ryanlhxu at &lt;a href=&quot;http://ryanlhxu.com&quot;&gt;Ryanlhxu&lt;/a&gt; on April 29, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>
