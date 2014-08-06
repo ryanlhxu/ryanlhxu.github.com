@@ -3,8 +3,8 @@ layout: post
 title: 使用Jekyll在GitHub上搭建个人博客
 description: "像黑客一样写博客"
 modified: 2014-05-3
-category: Life
-tags: [Jekyll, GitHuB, Blog]
+category: Coding
+tags: [Jekyll, GitHub, Blog]
 comments: true
 ---
 
