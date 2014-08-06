@@ -2,7 +2,7 @@
 layout: post
 title: 媒体与政治
 description: "基于博弈的框架"
-category: Academy
+category: Economics
 tags: [Politics, Economics]
 comments: true
 ---

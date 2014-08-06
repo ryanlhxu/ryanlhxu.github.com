@@ -2,7 +2,7 @@
 layout: post
 title: 用Sublime Text编写LaTeX
 description: 补全代码与表格制作
-category: Academy
+category: Coding
 tags: [LaTeX, Sublime]
 comments: true
 ---

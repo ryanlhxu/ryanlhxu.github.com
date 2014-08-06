@@ -2,7 +2,7 @@
 layout: post
 title: 抓取华尔街见闻每日新闻
 description: 网络爬虫-ChinaEveryday
-category: Academy
+category: Coding
 tags: [Web Crawler]
 comments: true
 ---
