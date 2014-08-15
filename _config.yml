@@ -42,6 +42,9 @@ links:
     url: /categories/
   - title: Tag 
     url: /tags/
+  - title: MyApp
+    url: http://xuliheng.sinaapp.com
+    external: true
   
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones

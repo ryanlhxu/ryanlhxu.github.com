@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 中国投资率高估之谜（转） 
+title: China's Outlook – Now and in 2020（转） 
 description: "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
-link: http://www.ftchinese.com/story/001057593
+link: http://rhg.com/notes/chinas-outlook-now-and-in-2020
 category: Economics
 tags: [China,Economy]
 share: true
