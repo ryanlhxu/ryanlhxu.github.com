@@ -1,7 +1,11 @@
 title:            Ryanlhxu
 description:      Ryanlhxu's Personal Blog
 # Your site's domain goes here. Leave localhost server or blank when working locally.
+<<<<<<< HEAD
 url:              http://ryanlhxu.github.com
+=======
+url:              http://ryanlhxu.github.io
+>>>>>>> 985377805e4987236b528e263552502456311794
 # Owner/author information
 owner:
   name:           ryanlhxu
