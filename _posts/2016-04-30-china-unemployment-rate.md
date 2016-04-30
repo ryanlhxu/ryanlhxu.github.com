@@ -4,7 +4,7 @@ title: 中国失业率的真相
 description: ""
 link: http://www.ftchinese.com/story/001057593
 category: Economics
-tags: [China,Economy]
+tags: [China,Economy,Economics]
 share: true
 ---
 中国经济从2002年起经历了显著的变化，其中包括GDP增速由加快转为放缓。然而由国家统计局与人力资源和社会保障部联合发布的城镇登记失业率却牢牢地维持在4%-4.1%左右。尤其是从2010年起，失业率一直稳定在4.1%。这让人不得不讶异，或者可以说，会让人怀疑国家统计局是否篡改了数据。
