@@ -45,7 +45,7 @@ image:
 
 #### 求职意向
 * 行业研究员
-* 量化研究员
+* 量化研究员(或基金产品开发)
 
 <figure>
 	<a href="http://www.econ.fudan.edu.cn/dofiles/img/2015121883512501.jpg"><img src="http://www.econ.fudan.edu.cn/dofiles/img/2015121883512501.jpg" height="300" width="350"></a>
