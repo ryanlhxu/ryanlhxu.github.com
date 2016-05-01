@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 中国失业率的真相 
-description: ""
+description: "自己研究的简要总结"
 link: http://www.ftchinese.com/story/001057593
 category: Economics
 tags: [China,Economy,Economics]
