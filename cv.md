@@ -12,7 +12,7 @@ image:
 #### 基本情况
 * 徐力恒，男，27岁，中共党员
 * 地址：上海市杨浦区武川路78弄复旦大学北区99号楼602室
-* 邮箱：ryanlhxu@outlook.com
+* 邮箱：[ryanlhxu@outlook.com](mailto:ryanlhxu@outlook.com)
 * 联系电话：086-18818263276
 
 #### 教育背景
