@@ -18,7 +18,7 @@ I'm a Ph.D candidate in economics. The process of my life and study would be rec
 
 #### Interests
 * Economics: Applied Micro Econometrics, Industry Organization, Chinese Economy
-* Coding: R, LaTeX, Matlab, Python
+* Coding: R, Python, LaTeX
 * Other: NBA, football, swimming
 
 #### Contact
