@@ -4,7 +4,7 @@ permalink: /cv/
 title: 中文简历
 tagline: Modeling My Simple Life
 tags: [me]
-modified: 5-1-2015
+modified: 5-1-2016
 image:
   feature: http://photos.tuchong.com/437717/f/7282638.jpg
 ---

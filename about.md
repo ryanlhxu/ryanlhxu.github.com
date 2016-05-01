@@ -24,6 +24,7 @@ I'm a Ph.D candidate in economics. The process of my life and study would be rec
 #### Contact
 * Weibo: [@不理不睬Ryan](http://weibo.com/economicgay)
 * Email: [ryanlhxu@outlook.com](mailto:ryanlhxu@gmail.com)
+* [CV](http://ryanlhxu.github.io/cv)
 
 
 <figure>
