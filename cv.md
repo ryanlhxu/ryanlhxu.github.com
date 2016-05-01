@@ -45,6 +45,9 @@ image:
 * 行业研究员
 * 量化研究员(或基金产品开发)
 
+> **本人学习能力强，广泛涉猎专业之外的各种知识，自学计算机前后端技术。热爱投资，坚信基本面研究，并且认为“形式和内容一样重要”。本人十分希望能获得与二级市场密切相关的实习机会以及工作。**
+
+
 <figure>
 	<a href="http://www.econ.fudan.edu.cn/dofiles/img/2015121883512501.jpg"><img src="http://www.econ.fudan.edu.cn/dofiles/img/2015121883512501.jpg" height="300" width="350"></a>
 	<figcaption>摄于复旦大学经济学院</figcaption>
