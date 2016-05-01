@@ -64,17 +64,16 @@ share: true
 
 <br/>
 
-####说明
 
-* 英文原文The Truth about Chinese Unemployment Rates发表于Project Syndiacate
+> 英文原文The Truth about Chinese Unemployment Rates发表于Project Syndiacate
 
-* 专业指导: 张军教授、徐力恒、史晋星
+> 专业指导: 张军教授、徐力恒、史晋星
 
-* 中文翻译: 姚思文、夏梦
-
+> 中文翻译: 姚思文、夏梦
 
 
-###The Truth about Chinese Unemployment Rates
+
+### The Truth about Chinese Unemployment Rates
 
 SHANGHAI – Since 2002, China’s economy has undergone significant changes, including a shift from acceleration to deceleration of GDP growth. Yet the official urban unemployment rate, jointly issued by the National Bureau of Statistics (NBS) and the Department of Labor and Social Security, has remained remarkably steady, at around 4-4.1%. Since 2010, it has stood at precisely 4.1%. This is surprising, to say the least – and has led some to ask whether the NBS could be fudging the numbers.
 
