@@ -19,7 +19,7 @@ image:
 * B.A. in Economics, Zhejiang University, 2012
  
 #### Experience of Internship
-* Quant, [Zhengshang Fund](http://www.zsfund.com/), 2016
+* Quant, [Zheshang Fund](http://www.zsfund.com/), 2016
 
 #### Experience of Research
 * Membership, Major Project, The National Social Science Foundation of China, 2016
