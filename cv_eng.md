@@ -26,7 +26,7 @@ image:
 * Research Assitant, Emergency Project, The National Natural Science Foundation of China, 2015
 
 #### Publication
-* Zhang, J., Xu, L and Liu, F., 2016, "Project China's Future Economic Growth and Structural Change." *World Economy* (Chinese A Journal in Economics), 2016, No.1:52-74.
+* Zhang, J., Xu, L and Liu, F., "Project China's Future Economic Growth and Structural Change." *World Economy* (Chinese A Journal in Economics), 2016, No.1:52-74.
 * Zhang, J., Xu, L and Liu, F. “The Future is in the Past: Projecting and Plotting the Potential Rate of Growth and Trajectory of the Structural Change of the Chinese Economy for the Next 20 Years.” *China & World Economy* (SSCI), 2015, Vol.23, No.1:21-46.
 
 #### Working Paper
