@@ -32,7 +32,7 @@ image:
 #### Working Paper
 * Xu, L., 2016, "Evolving Comparative Advantage, Industrial Linkage and Structural Change."
 * Zhang, J., Xu, L., Zhang, H., 2015, "The Truth about Chinese Unemployment Rate."
-* Tang, W., Shi, L., Wu, T., Xu, L., 2016, "Skewness Preference and IPO Anomalies in China." (In English)
+* Tang, W., Shi, L., Wu, T., Xu, L., 2016, "Skewness Preference and IPO Anomalies in China." (In English, [pdf](http://poseidon01.ssrn.com/delivery.php?ID=766114027119124065122092019087105024041036054041060067089080104124119126127082029065030103098020118029043081030065105125085099017069086012044081109074085091121111030025085034105116072081082095001103090066088125027025123104092025084011066122064005029066&EXT=pdf))
 
 
 #### Basic Skills
