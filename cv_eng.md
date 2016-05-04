@@ -23,7 +23,7 @@ image:
 
 #### Experience of Research
 * Membership, Major Project, The National Social Science Foundation of China, 2016
-* Research Assitant, Emergency Project, The National Natural Science Foundation of China, 2015
+* Research Assistant, Emergency Project, The National Natural Science Foundation of China, 2015
 
 #### Publication
 * Zhang, J., Xu, L and Liu, F., "Project China's Future Economic Growth and Structural Change." *World Economy* (Chinese A Journal in Economics), 2016, No.1:52-74.
@@ -36,7 +36,7 @@ image:
 
 
 #### Basic Skills
-* Have major in Economics, especially econometrics.
+* Have major in economics, especially econometrics.
 * Be proficient in writing R and Python scripts and familiar with SQL database.
 * Have plentiful skills in deploying web crawler, data cleaning, data visualization and data analysis.
 * Be familiar with acquiring financial data from Wind or Hengshengjuyuan database.

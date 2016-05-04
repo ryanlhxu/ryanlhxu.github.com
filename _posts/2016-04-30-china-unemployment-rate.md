@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 中国失业率的真相 
-description: "对自己研究的简要总结"
+description: "对2005-2012中国失业率数字的估计"
 category: Economics
 tags: [China,Economy,Economics]
 comment: true
