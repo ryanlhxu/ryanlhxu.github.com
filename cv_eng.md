@@ -10,7 +10,7 @@ image:
 ---
 
 #### Information
-* Liheng Xu, Male, 27-year-old.
+* Liheng Xu
 * Email: [ryanlhxu@outlook.com](mailto:ryanlhxu@outlook.com)
 * Website: [http://ryanlhxu.github.com](http://ryanlhxu.github.com)
 

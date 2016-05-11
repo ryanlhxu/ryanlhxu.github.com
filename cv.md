@@ -10,7 +10,7 @@ image:
 ---
 
 #### 基本情况
-* 徐力恒，男，27岁
+* 徐力恒
 * 邮箱：[ryanlhxu@outlook.com](mailto:ryanlhxu@outlook.com)
 
 #### 教育背景
