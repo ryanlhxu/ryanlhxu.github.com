@@ -43,8 +43,7 @@ image:
 
 
 #### Desired Positions
-* Researcher in macroeconomy
-* Researcher in some industry
+* Researcher
 * Quant
 
 <figure>
