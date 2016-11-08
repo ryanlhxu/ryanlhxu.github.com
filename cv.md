@@ -25,8 +25,14 @@ image:
 * 国家自然科学基金应急项目 助研       2015
 
 #### 发表论文
-* 张军、徐力恒和刘芳，2016，《鉴往知来：推测中国经济增长潜力与结构演变》，《世界经济》，第1期第52-74页。
-* Zhang, J., Xu, L and Liu, F. “The Future is in the Past: Projecting and Plotting the Potential Rate of Growth and Trajectory of the Structural Change of the Chinese Economy for the Next 20 Years.” *China & World Economy* (英文SSCI), 2015, Vol.23, No.1:21-46.
+
+###### 中国经济
+* 张军、徐力恒和刘芳，2016，《鉴往知来：推测中国经济增长潜力与结构演变》，与张军和刘芳合作，《世界经济》（中文A类），第1期，第52-74页。
+* "Uncovering the Truth about Chinese Urban Unemployment Rates: 2005-2012" (with Jun Zhang and Huihui Zhang), *China & World Economy* (In English, SSCI), 2016, Vol. 24, No.6:1-18. 
+* Zhang, J., Xu, L and Liu, F. "The Future is in the Past: Projecting and Plotting the Potential Rate of Growth and Trajectory of the Structural Change of the Chinese Economy for the Next 20 Years." *China & World Economy* (In English, SSCI), 2015, Vol.23, No.1:21-46.
+
+###### 行为金融
+* Skewness Preference and IPO Anomalies in China” (with Wei Tang and Tianhao Wu), *Annals of Economics and Finance* (In English, SSCI), 2016, accepted.
 
 #### 工作论文
 * 徐力恒，2016，《比较优势演变、产业关联和结构转变》。
