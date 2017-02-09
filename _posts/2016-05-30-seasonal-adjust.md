@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 使用K13进行季节调整
+title: 使用X13进行季节调整
 description: 考虑中国农历年效应
 modified: 2016-05-30
 category: Economics
-tags: [R, K13]
+tags: [R, X13]
 comments: true
 ---
 
