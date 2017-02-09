@@ -64,7 +64,7 @@ comment: true
 <br/>
 
 
-> 英文原文The Truth about Chinese Unemployment Rates发表于Project Syndiacate
+> 英文原文The Truth about Chinese Unemployment Rates发表于Project Syndicate
 
 > 专业指导: 张军教授、徐力恒、史晋星
 
