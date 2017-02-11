@@ -23,8 +23,8 @@ comments: true
 * 通过脚本文件组织报告内容并生成Markdown文件（具体见流程图）。
 
 * 通过Pandoc将Markdown文件转换成PDF文件，以下命令是将test.md转化成test.pdf，其中template.tex是XeLaTeX模板，可根据偏好自行修改。
-    
-    $ pandoc --template=template.tex --latex-engine=xelatex test.md -o test.pdf
+
+	$ pandoc --template=template.tex --latex-engine=xelatex test.md -o test.pdf
 
 ### 流程图
 
