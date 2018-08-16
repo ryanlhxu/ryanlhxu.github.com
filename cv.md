@@ -32,28 +32,22 @@ image:
 #### 发表论文
 
 ###### 中国经济
-* 《鉴往知来：推测中国经济增长潜力与结构演变》，与张军和刘芳合作，《世界经济》（中文A类），2016年，第1期，第52-74页。
+* [《劳动力市场分割的技能偏向如何影响家庭人力资本投资》](http://www.ciejournal.org/UploadFile/Issue/tluybr1i.pdf)，与张军和张慧慧合作，《中国工业经济》（中文核心），2018年，第8期，第5-23页。
+* 《鉴往知来：推测中国经济增长潜力与结构演变》，与张军和刘芳合作，《世界经济》（中文核心），2016年，第1期，第52-74页。
 * "Uncovering the Truth about Chinese Urban Unemployment Rates: 2005-2012." (with Jun Zhang and Huihui Zhang), *China & World Economy* (In English, SSCI), 2016, Vol. 24, No.6:1-18. 
 * "The Future is in the Past: Projecting and Plotting the Potential Rate of Growth and Trajectory of the Structural Change of the Chinese Economy for the Next 20 Years." (With Jun Zhang and Fang Liu), *China & World Economy* (In English, SSCI), 2015, Vol.23, No.1:21-46.
 
 ###### 行为金融
-* "[Skewness Preference and IPO Anomalies in China](https://poseidon01.ssrn.com/delivery.php?ID=530112070066075011090011066103070022009056033020093009075021093091004072125005126023004010006016122030040069019101001112121105056014025055017120082065065017079120001017015016101066004030084125088015088125109111015116084119117065007118118065088120028071&EXT=pdf)" (with Wei Tang and Tianhao Wu), *Annals of Economics and Finance* (In English, SSCI), 2016, accepted.
+* "[Skewness Preference and IPO Anomalies in China](http://aefweb.net/AefArticles/aef180108Tang.pdf)" (with Wei Tang and Tianhao Wu), *Annals of Economics and Finance* (In English, SSCI), 2017, Vol.18, No.1:173-199.
 
 #### 出版书籍
 *  《自动化交易R语言实战指南》（译著），与汤伟等，人民邮电出版社，2017年。
 
 #### 基本技能
-* 宏观经济分析与资产配置
-* 微观计量
-* 熟悉R、Python等脚本语言、SQL Server等数据库语言
+* 宏观经济分析与大类资产配置
+* 微观计量分析
+* 熟悉R、Python等脚本语言、Oracle、SQL Server等数据库语言
 * 擅长网络爬虫、数据清理、数据可视化以及数据挖掘和分析等工作
-
-#### 求职意向
-* 量化研究员
-* 宏观研究员 
-
-> **本人学习能力强，硕博在读期间，除扎实掌握经济学知识之外，广泛涉猎专业之外的各种知识，包括自学计算机前后端技术。本人热爱宏观研究与量化投资，希望获得与二级市场密切相关的工作机会。**
-
 
 <figure>
 	<a href="http://www.econ.fudan.edu.cn/dofiles/img/2015121883512501.jpg"><img src="http://www.econ.fudan.edu.cn/dofiles/img/2015121883512501.jpg" height="300" width="350"></a>
