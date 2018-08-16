@@ -38,10 +38,10 @@ image:
 * "The Future is in the Past: Projecting and Plotting the Potential Rate of Growth and Trajectory of the Structural Change of the Chinese Economy for the Next 20 Years." (With Jun Zhang and Fang Liu), *China & World Economy* (In English, SSCI), 2015, Vol.23, No.1:21-46.
 
 ###### 行为金融
-* "[Skewness Preference and IPO Anomalies in China](http://aefweb.net/AefArticles/aef180108Tang.pdf)" (with Wei Tang and Tianhao Wu), *Annals of Economics and Finance* (In English, SSCI), 2017, Vol.18, No.1:173-199.
+* "[Skewness Preference and IPO Anomalies in China.](http://aefweb.net/AefArticles/aef180108Tang.pdf)" (with Wei Tang and Tianhao Wu), *Annals of Economics and Finance* (In English, SSCI), 2017, Vol.18, No.1:173-199.
 
 #### 出版书籍
-*  《自动化交易R语言实战指南》（译著），与汤伟等，人民邮电出版社，2017年。
+*  《自动化交易R语言实战指南》（译著），与汤伟等合作，人民邮电出版社，2017年。
 
 #### 基本技能
 * 宏观经济分析与大类资产配置
