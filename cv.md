@@ -32,6 +32,7 @@ image:
 #### 发表论文
 
 ###### 中国经济
+* [《房价上涨可以解释高等教育升学率的性别差异吗》](http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&filename=SZWH201804001&dbname=CJFDPREP)，与张慧慧和张军合作，《世界经济文汇》（中文核心），2018年，第4期，第1-19页。
 * [《劳动力市场分割的技能偏向如何影响家庭人力资本投资》](http://www.ciejournal.org/UploadFile/Issue/tluybr1i.pdf)，与张军和张慧慧合作，《中国工业经济》（中文核心），2018年，第8期，第5-23页。
 * 《鉴往知来：推测中国经济增长潜力与结构演变》，与张军和刘芳合作，《世界经济》（中文核心），2016年，第1期，第52-74页。
 * "Uncovering the Truth about Chinese Urban Unemployment Rates: 2005-2012." (with Jun Zhang and Huihui Zhang), *China & World Economy* (In English, SSCI), 2016, Vol. 24, No.6:1-18. 
